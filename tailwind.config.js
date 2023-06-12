@@ -9,21 +9,34 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '768px',
-      'md': '1020px',
-      'lg': '1213px',
+      sm: "768px",
+      md: "1020px",
+      lg: "1213px",
     },
     container: {
       center: true,
-      padding: '1rem',
+      padding: "1rem",
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        amarelo: {
+          1: "#FCFC30",
+        },
+        azul: {
+          1: "#465EFF",
+          2: "#54DCFC",
+        },
+        verde: {
+          1: "#00EBD0",
+        },
+        roxo: {
+          1: "#BDB6FF",
+        },
+        vermelho: {
+          1: "#FB796D",
+        },
       },
     },
   },
   plugins: [],
-}
+};
