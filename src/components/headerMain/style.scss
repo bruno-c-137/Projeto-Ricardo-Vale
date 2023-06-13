@@ -1,5 +1,45 @@
-.header-main {
-  p {
-    color: red;
+// .header-main {
+//   p {
+//     color: red;
+//   }
+// }
+
+//hamburguer
+.hamburguer {
+  width: 34px;
+  border-top: 4px solid;
+  display: block;
+  color: black;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  border: 2px solid;
+  width: 30px;
+  background: currentColor;
+  content: "";
+  display: block;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.ativado {
+  .hamburguer {
+    border-top-color: transparent;
+  }
+}
+
+.ativado {
+  .hamburguer::before {
+    transform: rotate(135deg);
+  }
+}
+
+.ativado {
+  .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -8px;
+    // margin-top: 5px;
   }
 }

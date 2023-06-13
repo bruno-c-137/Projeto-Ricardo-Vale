@@ -37,7 +37,7 @@ export default function FooterMain() {
               <strong>Sobre</strong>
             </p>
             <div>
-              <div className=" ">
+              <div className="">
                 <p className="hidden sm:block">
                   <strong>Trabalho</strong>
                 </p>
@@ -116,12 +116,12 @@ export default function FooterMain() {
         </div>
         <div className="sm:flex justify-between pt-5 sm:pt-12">
           <div className="flex items-center gap-7">
-            <IconPT />
-            <IconInstagram />
-            <IconFaceBook />
-            <IconYoutube />
-            <IconFace />
-            <IconTwitter />
+            <IconPT className="text-white" />
+            <IconInstagram className="text-white" />
+            <IconFaceBook className="text-white" />
+            <IconYoutube className="text-white" />
+            <IconFace className="text-white" />
+            <IconTwitter className="text-white" />
           </div>
           <div className="text-[10px] text-[#FFFFFF] pt-3 sm:pt-0">
             <p>Copyright © 2023 Ricardo Vale - Todos os direitos reservados</p>
