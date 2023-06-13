@@ -19,21 +19,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        amarelo: {
-          1: "#FCFC30",
-        },
-        azul: {
-          1: "#465EFF",
-          2: "#54DCFC",
-        },
-        verde: {
-          1: "#00EBD0",
-        },
-        roxo: {
-          1: "#BDB6FF",
-        },
         vermelho: {
-          1: "#FB796D",
+          1: "#C61212",
         },
       },
     },

@@ -33,7 +33,7 @@ body {
 /* CRIA BARRA PERSONALIZADA */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #465eff white;
+  scrollbar-color: #c61212 white;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -46,7 +46,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #465eff;
+  background-color: #c61212;
   border-radius: 20px;
   border: 2px solid white;
 }
