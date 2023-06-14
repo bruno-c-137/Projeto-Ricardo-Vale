@@ -142,7 +142,7 @@ export default function HeaderMain() {
 
   return (
     <div className="header-main bg-[#FFFFFF] h-full w-full">
-      <div className=" w-full h-full">{NavMenuMb()}</div>
+      <div className="w-full h-full">{NavMenuMb()}</div>
       <div className="bg-[#FFFFFF] z-50 relative">
         <div className="flex z-50 relative items-center bg-[#FFFFFF] justify-between sm:justify-center py-4 sm:gap-10 md:gap-6 lg:gap-10 container">
           <div>
@@ -161,7 +161,7 @@ export default function HeaderMain() {
             </div>
             <div className={`relative w-full`}>
               <button
-                className=" flex items-center gap-1"
+                className="flex items-center gap-1"
                 onClick={() => toogleFaq(1)}
               >
                 <span>Trabalho</span>
@@ -200,7 +200,7 @@ export default function HeaderMain() {
                 className={`absolute top-full left-0 bg-[#F4F4F4] transition-all rounded-lg px-3 ${
                   openFaq == 2
                     ? "max-h-[1000px] py-2 min-w-[165px]"
-                    : "max-h-[0px] overflow-hidden py-0"
+                    : "max-h-[0px] overflow-hidden py-0 min-w-[165px]"
                 }`}
               >
                 <p>Sala de Imprensa</p>
@@ -219,32 +219,32 @@ export default function HeaderMain() {
             </div>
           </div>
           <div className="hidden sm:flex items-center sm:gap-4 md:gap-2 lg:gap-4">
-            <button className=" duration-300 ease-in hover:scale-125">
+            <button className="duration-300 ease-in hover:scale-125">
               <IconPT className="text-[#C61212]" />
             </button>
-            <button className=" duration-300 ease-in hover:scale-125">
+            <button className="duration-300 ease-in hover:scale-125">
               <IconInstagram className="text-[#C61212]" />
             </button>
-            <button className=" duration-300 ease-in hover:scale-125">
+            <button className="duration-300 ease-in hover:scale-125">
               <IconFaceBook className="text-[#C61212]" />
             </button>
-            <button className=" duration-300 ease-in hover:scale-125">
+            <button className="duration-300 ease-in hover:scale-125">
               <IconYoutube className="text-[#C61212]" />
             </button>
-            <button className=" duration-300 ease-in hover:scale-125">
+            <button className="duration-300 ease-in hover:scale-125">
               <IconFace className="text-[#C61212]" />
             </button>
-            <button className=" duration-300 ease-in hover:scale-125">
+            <button className="duration-300 ease-in hover:scale-125">
               <IconTwitter className="text-[#C61212]" />
             </button>
-            <button className=" border border-[#C61212] px-2 text-[12px] rounded-[36px] text-[#C61212]">
+            <button className="border border-[#C61212] px-2 text-[12px] rounded-[36px] text-[#C61212]">
               Link.tree
             </button>
-            <div className=" h-8 w-[1px] border border-[#C61212]"></div>
+            <div className="h-8 w-[1px] border border-[#C61212]"></div>
             <button className=" duration-300 ease-in hover:scale-125">
               <IconHands className="text-[#C61212]" />
             </button>
-            <button className=" duration-300 ease-in hover:scale-125">
+            <button className="duration-300 ease-in hover:scale-125">
               <IconAa />
             </button>
           </div>

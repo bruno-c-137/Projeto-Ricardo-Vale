@@ -116,12 +116,24 @@ export default function FooterMain() {
         </div>
         <div className="sm:flex justify-between pt-5 sm:pt-12">
           <div className="flex items-center gap-7">
-            <IconPT className="text-white" />
-            <IconInstagram className="text-white" />
-            <IconFaceBook className="text-white" />
-            <IconYoutube className="text-white" />
-            <IconFace className="text-white" />
-            <IconTwitter className="text-white" />
+            <button className="duration-300 ease-in hover:scale-125">
+              <IconPT className="text-white" />
+            </button>
+            <button className="duration-300 ease-in hover:scale-125">
+              <IconInstagram className="text-white" />
+            </button>
+            <button className="duration-300 ease-in hover:scale-125">
+              <IconFaceBook className="text-white" />
+            </button>
+            <button className="duration-300 ease-in hover:scale-125">
+              <IconYoutube className="text-white" />
+            </button>
+            <button className="duration-300 ease-in hover:scale-125">
+              <IconFace className="text-white" />
+            </button>
+            <button className="duration-300 ease-in hover:scale-125">
+              <IconTwitter className="text-white" />
+            </button>
           </div>
           <div className="text-[10px] text-[#FFFFFF] pt-3 sm:pt-0">
             <p>Copyright © 2023 Ricardo Vale - Todos os direitos reservados</p>
