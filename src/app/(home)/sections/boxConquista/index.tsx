@@ -118,7 +118,7 @@ export default function BoxConquista() {
                 <strong>Veja todas as conquistas do nosso trabalho</strong>
               </div>
               <div>
-                <SetaR />
+                <SetaR className="text-vermelho-1" />
               </div>
             </button>
           </div>
