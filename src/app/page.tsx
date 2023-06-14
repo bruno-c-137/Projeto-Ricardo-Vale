@@ -10,12 +10,12 @@ import StarValMulheres from "@/assets/images/star-val-mulheres.svg";
 import StarSport from "@/assets/images/start-sport.svg";
 import VectorAprovado from "@/assets/images/vector-aprovado.svg";
 import StarConquista from "@/assets/images/star-conquista.svg";
+import SetaR from "@/assets/images/seta-r.svg";
 import { boxConquistas } from "./contentHome";
 import "./style.scss";
 // import required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
-// import Swiper from "swiper";
 
 export default function Home() {
   return (
@@ -146,14 +146,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="relative bg-[#E5E5E5]">
+      <div className="pb-20 bg-[#E5E5E5]">
+        <div className="relative pb-20 md:pb-32">
           <div className="container z-10 relative ">
             <div className="py-14">
-              <p className="text-white text-5xl">
+              <p className="text-white text-3xl md:text-5xl">
                 <strong>Outras</strong>
               </p>
-              <p className="text-white text-5xl">
+              <p className="text-white text-3xl md:text-5xl">
                 <strong>conquistas</strong>
               </p>
             </div>
@@ -238,12 +238,24 @@ export default function Home() {
               </Swiper>
             </div>
           </div>
-          <div className="absolute top-0 h-[75%] w-full">
+          <div className="absolute top-0 h-[68%] w-full">
             <img
               src={ImgOutrasConquistas.src}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
               alt=""
             />
+          </div>
+        </div>
+        <div className="container">
+          <div className="flex justify-center">
+            <button className="text-[#2F2F2F] btn-custom text-lg md:text-xl flex items-center rounded-full border border-vermelho-1 py-3 px-7 gap-x-7">
+              <div>
+                <strong>Veja todas as conquistas do nosso trabalho</strong>
+              </div>
+              <div>
+                <SetaR />
+              </div>
+            </button>
           </div>
         </div>
       </div>
