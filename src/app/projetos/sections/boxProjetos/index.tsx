@@ -1,13 +1,7 @@
 "use client";
-import VectorAprovado from "@/assets/images/vector-aprovado.svg";
-import StarConquista from "@/assets/images/star-conquista.svg";
 import IconDownload from "@/assets/images/icons/iconDownload.svg";
-import SetaR from "@/assets/images/seta-r.svg";
-import ImgOutrasConquistas from "@/assets/images/img-outras-conquistas.webp";
-// import required modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
-import "./style.scss";
+import { Autoplay, Pagination } from "swiper";
 import { boxConquistas } from "../../contentProjetos";
 export default function BoxProjetos() {
   return (
@@ -21,7 +15,7 @@ export default function BoxProjetos() {
                   key={index}
                   className="h-full bg-white rounded-2xl shadow-lg flex flex-col items-center px-5 py-10 "
                 >
-                  <div className="pb-4 text-left w-full text-4xl font-medium text-[#C61212]">
+                  <div className="pb-4 w-full text-4xl font-medium text-[#C61212]">
                     {opt?.title}
                   </div>
                   <div className="pb-5 flex-1">
@@ -45,7 +39,7 @@ export default function BoxProjetos() {
               );
             })}
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden swiper-custom">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}

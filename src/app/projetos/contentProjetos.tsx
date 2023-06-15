@@ -1,4 +1,3 @@
-import ImgTransporte from "@/assets/images/img-transporte.svg";
 export const boxConquistas: any = [
   {
     title: "LEI 214/2018",
