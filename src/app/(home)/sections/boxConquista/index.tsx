@@ -6,7 +6,6 @@ import ImgOutrasConquistas from "@/assets/images/img-outras-conquistas.webp";
 // import required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import "./style.scss";
 import { boxConquistas } from "../../contentHome";
 export default function BoxConquista() {
   return (
@@ -54,7 +53,7 @@ export default function BoxConquista() {
                 <StarConquista />
               </div>
             </div>
-            <div className="md:hidden">
+            <div className="md:hidden swiper-custom ">
               <Swiper
                 spaceBetween={30}
                 slidesPerView={1}

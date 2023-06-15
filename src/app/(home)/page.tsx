@@ -9,6 +9,11 @@ import StarSport from "@/assets/images/start-sport.svg";
 import SetaButtonR from "@/assets/images/seta-button-r.svg";
 import StarDesarmamento from "@/assets/images/star-desarmamento.svg";
 import VectorDesarmamento from "@/assets/images/vector-desarmamento.svg";
+import StarNoticias1 from "@/assets/images/star-noticias-1.svg";
+import StarNoticias2 from "@/assets/images/star-noticias-2.svg";
+import StarNoticias3 from "@/assets/images/star-noticias-3.svg";
+import StarNoticias4 from "@/assets/images/star-noticias-4.svg";
+import SetaR from "@/assets/images/seta-r.svg";
 import IconArma from "@/assets/images/icons/icon-arma.webp";
 import IconCifrao from "@/assets/images/icons/icon-cifrao.webp";
 import IconFem from "@/assets/images/icons/icon-fem.webp";
@@ -16,6 +21,7 @@ import IconBola from "@/assets/images/icons/icon-bola.webp";
 import IconTeatro from "@/assets/images/icons/icon-teatro.webp";
 import IconCidade from "@/assets/images/icons/icon-cidade.webp";
 import BoxConquista from "./sections/boxConquista";
+import BoxNoticias from "./sections/boxNoticias";
 export default function Home() {
   return (
     <div className="home">
@@ -151,7 +157,7 @@ export default function Home() {
       <div className="bg-[#E5E5E5]">
         <div className="relative">
           <div className="sm:container">
-            <div className="sm:flex justify-between py-14">
+            <div className="sm:flex justify-between sm:py-14">
               <div className="sm:w-1/2 sm:pr-10 lg:pr-20 mb-10 sm:mb-0 p-4 sm:p-0">
                 <p className="text-xl text-vermelho-1 tracking-[0.5rem]">
                   <strong>CONHEÇA NOSSAS</strong>
@@ -252,6 +258,48 @@ export default function Home() {
             <div className="flex justify-end items-end sm:pr-20 sm:-mt-16">
               <StarDesarmamento />
             </div>
+          </div>
+        </div>
+        <div className="flex justify-center mb-5">
+          <StarNoticias1 />
+        </div>
+        <div className="relative mb-16">
+          <div className="container z-10 relative">
+            <div className="sm:flex sm:justify-between sm:items-end">
+              <div>
+                <p className="text-xl text-vermelho-1 tracking-[0.5rem]">
+                  <strong>ÚLTIMAS</strong>
+                </p>
+                <p className="text-[#2F2F2F] text-4xl md:text-6xl lg:text-7xl mb-5 sm:mb-0">
+                  <strong>Notícias</strong>
+                </p>
+              </div>
+              <div>
+                <button
+                  className="text-[#2F2F2F] btn-custom text-lg md:text-xl flex justify-center
+                 items-center rounded-full border border-vermelho-1 py-3 px-7 gap-x-7 w-full sm:w-auto"
+                >
+                  <div>
+                    <strong>mais notícias</strong>
+                  </div>
+                  <div>
+                    <SetaR className="text-vermelho-1" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="absolute top-40 sm:top-20 lg:top-0 -left-10 min-[1370px]:left-0">
+            <StarNoticias2 />
+          </div>
+        </div>
+        <div className="relative pb-32">
+          <BoxNoticias />
+          <div className="absolute bottom-[50%] right-[5%]">
+            <StarNoticias3 />
+          </div>
+          <div className="absolute bottom-0 -left-20 sm:left-[10%] lg:left-[20%]">
+            <StarNoticias4 />
           </div>
         </div>
       </div>
