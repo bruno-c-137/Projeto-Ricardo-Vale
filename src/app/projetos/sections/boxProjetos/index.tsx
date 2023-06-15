@@ -31,7 +31,7 @@ export default function BoxProjetos() {
                         </p>
                       </div>
                       <div>
-                        <IconDownload />
+                        <IconDownload className="text-white" />
                       </div>
                     </button>
                   </div>
@@ -76,7 +76,7 @@ export default function BoxProjetos() {
                             </p>
                           </div>
                           <div>
-                            <IconDownload />
+                            <IconDownload className="text-white" />
                           </div>
                         </button>
                       </div>

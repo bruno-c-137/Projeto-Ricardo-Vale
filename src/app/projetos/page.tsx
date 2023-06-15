@@ -47,15 +47,8 @@ export default function Projetos() {
         </div>
         <div className="container pt-6 pb-24 sm:pt-24 sm:pb-24 relative">
           <div className="flex justify-center items-center text-[#404040]">
-            <div className="lg:ml-20 absolute -top-20 sm:top-20 -left-12 sm:left-0">
-              <div className="absolute top-80 sm:top-56 left-5 sm:-left-5 lg:-left-20">
-                <IconStarsSmall />
-              </div>
-            </div>
-            <div className="absolute bottom-0 sm:bottom-0 -right-7 sm:right-20">
-              <div>
-                <IconStarsSmall />
-              </div>
+            <div className="absolute top-[30%] sm:top-[20%] -left-5 lg:-left-0">
+              <IconStarsSmall />
             </div>
             <div className="sm:w-10/12 lg:w-8/12">
               <div className="sm:px-16 lg:px-20 text-[15px]">
@@ -71,6 +64,9 @@ export default function Projetos() {
           </div>
           <div className="pt-16 sm:pt-12 lg:px-14">
             <BoxProjetos />
+          </div>
+          <div className="hidden sm:block absolute sm:-bottom-[5%] md:-bottom-[2%] right-[10%]">
+            <IconStarsSmall />
           </div>
         </div>
       </div>

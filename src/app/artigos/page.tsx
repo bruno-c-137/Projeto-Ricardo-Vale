@@ -184,9 +184,9 @@ export default function Artigos() {
             <div className="pt-10">
               <BoxArtigos />
             </div>
-            <div className="hidden sm:block absolute -bottom-32 sm:right-4 md:right-16">
-              <IconStarsSmall />
-            </div>
+            <div className="hidden sm:block absolute sm:-bottom-[30%] sm:right-[10%]">
+            <IconStarsSmall />
+          </div>
           </div>
         </div>
       </div>
