@@ -14,14 +14,17 @@ import StarNoticias2 from "@/assets/images/star-noticias-2.svg";
 import StarNoticias3 from "@/assets/images/star-noticias-3.svg";
 import StarNoticias4 from "@/assets/images/star-noticias-4.svg";
 import SetaR from "@/assets/images/seta-r.svg";
+import IconWhatsApp from "@/assets/images/icons/icon-whatsapp.svg";
 import IconArma from "@/assets/images/icons/icon-arma.webp";
 import IconCifrao from "@/assets/images/icons/icon-cifrao.webp";
 import IconFem from "@/assets/images/icons/icon-fem.webp";
 import IconBola from "@/assets/images/icons/icon-bola.webp";
 import IconTeatro from "@/assets/images/icons/icon-teatro.webp";
 import IconCidade from "@/assets/images/icons/icon-cidade.webp";
+import ImgWhatsapp from "@/assets/images/img-whatsapp.webp";
 import BoxConquista from "./sections/boxConquista";
 import BoxNoticias from "./sections/boxNoticias";
+
 export default function Home() {
   return (
     <div className="home">
@@ -154,7 +157,7 @@ export default function Home() {
       <div>
         <BoxConquista />
       </div>
-      <div className="bg-[#E5E5E5]">
+      <div className="bg-[#F4F2F3]">
         <div className="relative">
           <div className="sm:container">
             <div className="sm:flex justify-between sm:py-14">
@@ -293,13 +296,45 @@ export default function Home() {
             <StarNoticias2 />
           </div>
         </div>
-        <div className="relative pb-32">
+        <div className="relative pb-32 mb-5 sm:mb-0">
           <BoxNoticias />
           <div className="absolute bottom-[50%] right-[5%]">
             <StarNoticias3 />
           </div>
           <div className="absolute bottom-0 -left-20 sm:left-[10%] lg:left-[20%]">
             <StarNoticias4 />
+          </div>
+        </div>
+        <div>
+          <div className="container">
+            <div className="flex flex-col sm:flex-row sm:items-center">
+              <div className="sm:w-1/2 order-1 sm:order-none">
+                <img src={ImgWhatsapp.src} alt="" />
+              </div>
+              <div className="sm:w-1/2 sm:px-10 lg:px-16">
+                <p className="text-[#2F2F2F] text-4xl md:text-6xl lg:text-7xl mb-5">
+                  <strong>Me chame no Whatsapp</strong>
+                </p>
+                <p className="text-[#2F2F2F] text-base mb-14">
+                  Todas as mensagens são lidas com atenção e serão respondidas o
+                  mais breve possível.
+                </p>
+                <button
+                  className="bg-[#67D449] text-white btn-custom text-lg md:text-xl w-full sm:w-auto 
+                flex justify-between items-center rounded-full  py-3 px-7 gap-x-4"
+                >
+                  <div>
+                    <IconWhatsApp />
+                  </div>
+                  <div>
+                    <strong>Whats do Ricardo</strong>
+                  </div>
+                  <div>
+                    <SetaR className="text-white" />
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

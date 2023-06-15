@@ -10,7 +10,7 @@ import { boxConquistas } from "../../contentHome";
 export default function BoxConquista() {
   return (
     <div className="box-conquista">
-      <div className="pb-20 bg-[#E5E5E5]">
+      <div className="pb-20 bg-[#F4F2F3]">
         <div className="relative pb-20 md:pb-32">
           <div className="container z-10 relative ">
             <div className="py-14">
