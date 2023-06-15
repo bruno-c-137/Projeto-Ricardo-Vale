@@ -25,9 +25,12 @@ import IconCidade from "@/assets/images/icons/icon-cidade.webp";
 import ImgWhatsapp from "@/assets/images/img-whatsapp.webp";
 import ImgAGenteSeVe from "@/assets/images/img-a-gente-se-ve.webp";
 import FlickrLogo from "@/assets/images/flickr_logo.webp";
+import StarComunidadeR from "@/assets/images/star-comunidade-r.webp";
+import StarComunidadeL from "@/assets/images/star-comunidade-l.webp";
 import BoxConquista from "./sections/boxConquista";
 import BoxNoticias from "./sections/boxNoticias";
 import BoxAmigos from "./sections/boxAmigos";
+import FormComunidade from "./sections/formComunidade";
 
 export default function Home() {
   return (
@@ -374,7 +377,7 @@ export default function Home() {
       <div className="-mt-10">
         <StarDepoimento />
       </div>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden mb-24">
         <div className="container ">
           <div className="mb-24">
             <p className="text-xl text-vermelho-1 tracking-[0.5rem]">
@@ -386,6 +389,29 @@ export default function Home() {
           </div>
           <div>
             <BoxAmigos />
+          </div>
+        </div>
+      </div>
+      <div className="overflow-x-hidden">
+        <div className="container">
+          <div className="flex relative">
+            <div className="flex items-end  sm:-ml-10 sm:pr-10 pb-10 absolute sm:static bottom-0 pointer-events-none -left-14">
+              <img src={StarComunidadeL.src} alt="" />
+            </div>
+            <div className="flex-1 z-10 relative">
+              <div className="mb-16">
+                <p className="text-xl text-vermelho-1 tracking-[0.5rem]">
+                  <strong>VEM COM A GENTE</strong>
+                </p>
+                <p className="text-[#2F2F2F] text-4xl md:text-6xl lg:text-7xl mb-5 sm:mb-0">
+                  <strong>Comunidade</strong>
+                </p>
+              </div>
+              <FormComunidade />
+            </div>
+            <div className=" sm:-mr-10 pl-10 absolute sm:static pointer-events-none -right-20">
+              <img src={StarComunidadeR.src} alt="" />
+            </div>
           </div>
         </div>
       </div>
