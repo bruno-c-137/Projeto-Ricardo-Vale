@@ -22,6 +22,8 @@ import IconBola from "@/assets/images/icons/icon-bola.webp";
 import IconTeatro from "@/assets/images/icons/icon-teatro.webp";
 import IconCidade from "@/assets/images/icons/icon-cidade.webp";
 import ImgWhatsapp from "@/assets/images/img-whatsapp.webp";
+import ImgAGenteSeVe from "@/assets/images/img-a-gente-se-ve.webp";
+import FlickrLogo from "@/assets/images/flickr_logo.webp";
 import BoxConquista from "./sections/boxConquista";
 import BoxNoticias from "./sections/boxNoticias";
 
@@ -157,7 +159,7 @@ export default function Home() {
       <div>
         <BoxConquista />
       </div>
-      <div className="bg-[#F4F2F3]">
+      <div className="bg-[#F4F2F3] mb-14">
         <div className="relative">
           <div className="sm:container">
             <div className="sm:flex justify-between sm:py-14">
@@ -336,6 +338,35 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="relative">
+        <div className="container">
+          <div className="pb-10 sm:py-20 md:py-40 sm:w-1/3">
+            <p className="text-xl text-vermelho-1 tracking-[0.5rem] mb-4">
+              <strong>A GENTE SE VÊ</strong>
+            </p>
+            <div className="mb-5">
+              <img src={FlickrLogo.src} alt="" />
+            </div>
+            <p className="text-[#2F2F2F] text-base mb-10 pr-10">
+              Veja e baixe fotos do Ricardo Vale em alta resolução.
+            </p>
+            <button
+              className="bg-[#0063DB] text-white btn-custom text-lg md:text-xl 
+                flex  items-center rounded-full  py-2 px-7 gap-x-4"
+            >
+              <div>
+                <strong>Acesse</strong>
+              </div>
+              <div>
+                <SetaR className="text-white" />
+              </div>
+            </button>
+          </div>
+        </div>
+        <div className="sm:absolute sm:right-0 sm:top-0 sm:w-2/3 lg:w-auto sm:flex sm:items-center sm:h-full">
+          <img src={ImgAGenteSeVe.src} alt="" />
         </div>
       </div>
     </div>
