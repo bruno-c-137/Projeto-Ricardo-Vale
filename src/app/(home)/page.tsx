@@ -15,6 +15,7 @@ import StarNoticias3 from "@/assets/images/star-noticias-3.svg";
 import StarNoticias4 from "@/assets/images/star-noticias-4.svg";
 import SetaR from "@/assets/images/seta-r.svg";
 import IconWhatsApp from "@/assets/images/icons/icon-whatsapp.svg";
+import StarDepoimento from "@/assets/images/star-depoimento.svg";
 import IconArma from "@/assets/images/icons/icon-arma.webp";
 import IconCifrao from "@/assets/images/icons/icon-cifrao.webp";
 import IconFem from "@/assets/images/icons/icon-fem.webp";
@@ -26,6 +27,7 @@ import ImgAGenteSeVe from "@/assets/images/img-a-gente-se-ve.webp";
 import FlickrLogo from "@/assets/images/flickr_logo.webp";
 import BoxConquista from "./sections/boxConquista";
 import BoxNoticias from "./sections/boxNoticias";
+import BoxAmigos from "./sections/boxAmigos";
 
 export default function Home() {
   return (
@@ -367,6 +369,24 @@ export default function Home() {
         </div>
         <div className="sm:absolute sm:right-0 sm:top-0 sm:w-2/3 lg:w-auto sm:flex sm:items-center sm:h-full">
           <img src={ImgAGenteSeVe.src} alt="" />
+        </div>
+      </div>
+      <div className="-mt-10">
+        <StarDepoimento />
+      </div>
+      <div className="overflow-x-hidden">
+        <div className="container ">
+          <div className="mb-24">
+            <p className="text-xl text-vermelho-1 tracking-[0.5rem]">
+              <strong>DEPOIMENTOS</strong>
+            </p>
+            <p className="text-[#2F2F2F] text-4xl md:text-6xl lg:text-7xl mb-5 sm:mb-0">
+              <strong>Amigos da caminhada</strong>
+            </p>
+          </div>
+          <div>
+            <BoxAmigos />
+          </div>
         </div>
       </div>
     </div>

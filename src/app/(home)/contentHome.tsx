@@ -3,6 +3,7 @@ import ImgNoticia1 from "@/assets/images/noticia-1.webp";
 import ImgNoticia2 from "@/assets/images/noticia-2.webp";
 import ImgNoticia3 from "@/assets/images/noticia-3.webp";
 import ImgNoticia4 from "@/assets/images/noticia-4.webp";
+import ImgLula from "@/assets/images/img-lula.webp";
 export const boxConquistas: any = [
   {
     text: "Tornou todos os assentos dos transporte público  PREFERENCIAIS.",
@@ -66,4 +67,56 @@ export const boxNoticias: any = [
     data: "08/02/2023 17h04",
     text: "O deputado Ricardo Vale (PT) – autor de lei que inclui o debate sobre a valorização das mulheres...",
   },
+];
+
+export const boxAmigos: any = [
+  {
+    img: ImgLula,
+    nome: "Lula",
+    cargo: "Presidente do Brasil",
+    text: (
+      <>
+        Ted by the readable content of a page when looking at its layout. The
+        point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution
+      </>
+    ),
+  },
+  {
+    img: ImgLula,
+    nome: "Lula",
+    cargo: "Presidente do Brasil",
+    text: (
+      <>
+        Ted by the readable content of a page when looking at its layout. The
+        point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution
+      </>
+    ),
+  },
+  {
+    img: ImgLula,
+    nome: "Lula",
+    cargo: "Presidente do Brasil",
+    text: (
+      <>
+        Ted by the readable content of a page when looking at its layout. The
+        point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution
+      </>
+    ),
+  },
+  {
+    img: ImgLula,
+    nome: "Lula",
+    cargo: "Presidente do Brasil",
+    text: (
+      <>
+        Ted by the readable content of a page when looking at its layout. The
+        point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution
+      </>
+    ),
+  },
+  
 ];
