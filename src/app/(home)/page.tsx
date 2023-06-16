@@ -31,6 +31,7 @@ import BoxConquista from "./sections/boxConquista";
 import BoxNoticias from "./sections/boxNoticias";
 import BoxAmigos from "./sections/boxAmigos";
 import FormComunidade from "./sections/formComunidade";
+import Mapa from "./sections/mapa";
 
 export default function Home() {
   return (
@@ -392,7 +393,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden mb-20">
         <div className="container">
           <div className="flex relative">
             <div className="flex items-end  sm:-ml-10 sm:pr-10 pb-10 absolute sm:static bottom-0 pointer-events-none -left-14">
@@ -413,6 +414,19 @@ export default function Home() {
               <img src={StarComunidadeR.src} alt="" />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="mb-20">
+        <div className="container">
+          <div className="mb-16">
+            <p className="text-xl text-vermelho-1 tracking-[0.5rem]">
+              <strong>A CASA É SUA</strong>
+            </p>
+            <p className="text-[#2F2F2F] text-4xl md:text-6xl lg:text-7xl mb-5 sm:mb-0">
+              <strong>Nosso Escritório</strong>
+            </p>
+          </div>
+          <Mapa />
         </div>
       </div>
     </div>

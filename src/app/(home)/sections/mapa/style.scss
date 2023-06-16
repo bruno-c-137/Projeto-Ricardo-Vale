@@ -1,0 +1,17 @@
+.mapa {
+  .title-popup {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .text-popup {
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+  }
+}
+
+.leaflet-popup {
+  bottom: 35px !important;
+}
