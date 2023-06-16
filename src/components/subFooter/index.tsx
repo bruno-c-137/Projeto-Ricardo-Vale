@@ -2,7 +2,7 @@ import Image from "next/image";
 import ImgRicardoWhats from "@/assets/images/img-ricardoWhats.webp";
 import IconWhats from "@/assets/images/icons/iconWhatsWhite.svg";
 import IconArrow from "../../assets/images/icons/iconArrow.svg";
-import ImgZap from "@/assets/images/img-zap.png";
+import ImgZap from "@/assets/images/img-zap.webp";
 
 export default function SubFooter() {
   return (
@@ -27,11 +27,11 @@ export default function SubFooter() {
               />
             </div>
             <div>
-                <button className="btn-custom bg-[#67D449] rounded-[50px] text-sm sm:text-base flex items-center text-[#FFF] py-2 px-2 sm:px-4 gap-1 sm:gap-3">
-                    <IconWhats /> 
-                    <span>Whats do Ricardo</span>
-                    <IconArrow className="hidden sm:block" />
-                </button>
+              <button className="btn-custom bg-[#67D449] rounded-[50px] text-sm sm:text-base flex items-center text-[#FFF] py-2 px-2 sm:px-4 gap-1 sm:gap-3">
+                <IconWhats />
+                <span>Whats do Ricardo</span>
+                <IconArrow className="hidden sm:block" />
+              </button>
             </div>
           </div>
         </div>

@@ -6,10 +6,11 @@ import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
 import VectorDesarmamento from "@/assets/images/vector-desarmamento.svg";
 import SetaRBandeira from "@/assets/images/seta-r-bandeira.svg";
 import { boxBandeiras } from "./contentBandeiras";
+import SubFooter from "@/components/subFooter";
 export default function Bandeiras() {
   return (
     <div className="bandeiras bg-[#F5F5F5]">
-      <div className="bg-[#C61212] mb-20">
+      <div className="bg-[#C61212] mb-10 md:mb-20">
         <div className="container lg:px-12">
           <div className="flex items-center justify-between">
             <div className="text-white w-1/2">
@@ -43,9 +44,9 @@ export default function Bandeiras() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mb-16 sm:mb-24">
         <div className="container">
-          <div className="md:px-20 mb-16">
+          <div className="md:px-20 mb-10 md:mb-16">
             <p className="font-semibold text-[#404040] text-base">
               Ricardo Vale defende diversas bandeiras fundamentais para a
               sociedade, como a valorização da agricultura familiar, a igualdade
@@ -105,6 +106,9 @@ export default function Bandeiras() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <SubFooter />
       </div>
     </div>
   );
