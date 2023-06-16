@@ -3,8 +3,9 @@ import ImgRicardo from "@/assets/images/img-ricardo-header-2.webp";
 import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.svg";
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
-import VectorDesarmamento from "@/assets/images/vector-desarmamento.svg";
 import SetaRBandeira from "@/assets/images/seta-r-bandeira.svg";
+import StarBandeiras1 from "@/assets/images/star-bandeiras-1.svg";
+import StarBandeiras2 from "@/assets/images/star-bandeiras-2.svg";
 import { boxBandeiras } from "./contentBandeiras";
 import SubFooter from "@/components/subFooter";
 export default function Bandeiras() {
@@ -45,8 +46,14 @@ export default function Bandeiras() {
         </div>
       </div>
       <div className="mb-16 sm:mb-24">
-        <div className="container">
-          <div className="md:px-20 mb-10 md:mb-16">
+        <div className="container relative">
+          <div className="hidden sm:block absolute lg:-left-20  sm:top-24 md:top-10 pointer-events-none">
+            <StarBandeiras1 />
+          </div>
+          <div className=" absolute right-0 -bottom-14 sm:-bottom-32 md:-bottom-40 pointer-events-none">
+            <StarBandeiras2 />
+          </div>
+          <div className="md:px-20 mb-10 md:mb-16 z-10 relative">
             <p className="font-semibold text-[#404040] text-base">
               Ricardo Vale defende diversas bandeiras fundamentais para a
               sociedade, como a valorização da agricultura familiar, a igualdade
@@ -56,7 +63,7 @@ export default function Bandeiras() {
               garantir o desenvolvimento e a justiça social.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10  gap-y-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10  gap-y-10 z-10 relative">
             {boxBandeiras?.map((opt: any, index: any) => {
               return (
                 <div key={index} className="bg-white rounded-2xl p-7 shadow-md">
