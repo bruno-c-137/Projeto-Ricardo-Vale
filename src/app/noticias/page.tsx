@@ -6,6 +6,7 @@ import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.sv
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
 import BoxNoticias from "./sections/boxNoticias";
+import { boxNoticias } from "./contentNoticias";
 
 export default function Noticias() {
   return (
@@ -45,9 +46,9 @@ export default function Noticias() {
             </div>
           </div>
         </div>
-        <div className="pt-6 pb-24 sm:pb-24 relative">
-          <div className="pt-16 sm:pt-12 lg:px-14">
-            <BoxNoticias />
+        <div className="pt-6 pb-24 sm:pb-24 relative container lg:px-12">
+          <div className="pt-16 sm:pt-12">
+            <BoxNoticias dataNoticias={boxNoticias} />
           </div>
           <div className="hidden sm:block absolute sm:-bottom-[5%] md:-bottom-[2%] right-[10%]">
             <IconStarsSmall />

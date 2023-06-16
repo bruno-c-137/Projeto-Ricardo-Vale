@@ -50,7 +50,7 @@ export default function Artigos() {
           <div className="flex justify-center items-center text-[#404040] relative">
             <div className="sm:w-10/12 lg:w-8/12">
               <div className="lg:px-10">
-                <div className="flex items-center gap-6 ">
+                <div className="flex items-center gap-6">
                   <Image
                     src={Avatar}
                     className="pointer-events-none min-w-[100px] min-h-[100px] rounded-full"
@@ -185,8 +185,8 @@ export default function Artigos() {
               <BoxArtigos />
             </div>
             <div className="hidden sm:block absolute sm:-bottom-[30%] sm:right-[10%]">
-            <IconStarsSmall />
-          </div>
+              <IconStarsSmall />
+            </div>
           </div>
         </div>
       </div>

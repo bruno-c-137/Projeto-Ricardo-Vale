@@ -1,15 +1,15 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import { boxNoticias } from "../../contentNoticias";
 import Image from "next/image";
-export default function BoxNoticias() {
+
+export default function BoxNoticias({dataNoticias}:any) {  
   return (
     <div className="box-conquista">
       <div className="relative">
-        <div className="container z-10 relative">
+        <div className="z-10 relative">
           <div className="hidden md:grid md:grid-cols-4 md:gap-x-5 md:gap-y-12 md:relative ">
-            {boxNoticias?.map((opt: any, index: any) => {
+            {dataNoticias?.map((opt: any, index: any) => {
               return (
                 <div
                   key={index}
@@ -52,7 +52,7 @@ export default function BoxNoticias() {
               modules={[Autoplay, Pagination]}
               className="mySwiper-card"
             >
-              {boxNoticias?.map((opt: any, index: any) => {
+              {dataNoticias?.map((opt: any, index: any) => {
                 return (
                   <SwiperSlide key={index}>
                     <div className="h-full bg-white rounded-2xl shadow-lg flex flex-col items-center">

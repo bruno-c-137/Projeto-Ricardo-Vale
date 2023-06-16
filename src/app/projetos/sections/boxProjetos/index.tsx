@@ -7,7 +7,7 @@ export default function BoxProjetos() {
   return (
     <div className="box-conquista">
       <div className="relative">
-        <div className="container z-10 relative">
+        <div className="z-10 relative">
           <div className="hidden md:grid md:grid-cols-3 md:gap-x-5 md:gap-y-10 md:relative ">
             {boxConquistas?.map((opt: any, index: any) => {
               return (
