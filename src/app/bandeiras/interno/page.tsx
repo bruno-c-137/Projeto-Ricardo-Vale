@@ -1,8 +1,10 @@
 import Image from "next/image";
 import ImgRicardo from "@/assets/images/img-ricardo-header-2.webp";
+import BannerBandeiraInterno from "@/assets/images/banner-bandeira-interna.webp";
 import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.svg";
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
+import SubFooter from "@/components/subFooter";
 export default function Interno() {
   return (
     <div className="interno">
@@ -39,6 +41,102 @@ export default function Interno() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mb-28">
+        <div className="container">
+          <div className="mb-16">
+            <Image src={BannerBandeiraInterno} className="w-full" alt="" />
+          </div>
+          <div className="mb-20">
+            <p className="text-[#404040] text-base  sm:px-20 md:px-32">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              vulputate iaculis felis, in luctus augue luctus nec. Etiam
+              convallis fermentum mattis. Nullam quis nisi mauris. In viverra
+              lectus sed nulla pharetra porta. Sed eu mollis nisi. Mauris ex
+              lectus, congue at risus nec, interdum egestas velit. Sed pharetra,
+              mi sit amet malesuada elementum, sem purus molestie est, nec
+              bibendum odio lorem vitae erat. Nam dui augue, dignissim nec felis
+              sed, ultrices euismod lectus. Etiam vel ipsum vitae metus bibendum
+              hendrerit. Sed laoreet nisi at erat placerat scelerisque sit amet
+              sit amet dui. Pellentesque congue tincidunt varius. Mauris eget
+              velit mollis, luctus tortor vel, lacinia tellus. Ut porttitor,
+              arcu rutrum scelerisque laoreet, tortor tortor vehicula risus, a
+              tempus felis augue a nisl
+            </p>
+          </div>
+          <div className="bg-[#EAEAEA] rounded-2xl p-7 sm:px-10 md:p-20 shadow-lg">
+            <p className="text-vermelho-1 text-3xl sm:text-4xl mb-10">
+              <strong>Lorem ipsum dolor</strong>
+            </p>
+            <p className="text-[#404040] text-base mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              vulputate iaculis felis, in luctus augue luctus nec. Etiam
+              convallis fermentum mattis.
+            </p>
+            <div className="sm:flex justify-between">
+              <div className="mb-5 sm:mb-0">
+                <ul>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                </ul>
+              </div>
+              <div className="mb-5 sm:mb-0">
+                <ul>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base mb-2 list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                  <li className="list-disc text-[#404040] text-base list-inside">
+                    Lorem ipsum dolor sit amet,
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <SubFooter />
       </div>
     </div>
   );

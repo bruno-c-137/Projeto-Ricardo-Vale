@@ -31,7 +31,7 @@ export default function Mapa() {
               <Popup>
                 <p className="title-popup">Câmara dos Deputados</p>
                 <p className="text-popup">
-                  alácio do Congresso Nacional - Praça dos Três Poderes Brasília
+                  Palácio do Congresso Nacional - Praça dos Três Poderes Brasília
                   - DF - Brasil - CEP 70160-900
                 </p>
                 {/* <p className="text-popup">curtidas: <strong>{items.likes}</strong></p> */}
