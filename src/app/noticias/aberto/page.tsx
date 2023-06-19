@@ -7,8 +7,8 @@ import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg"
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
 import ImgNoticias from "@/assets/images/img-noticias.webp";
 import BoxNoticias from "../sections/boxNoticias";
-import IconFaceBook from "@/assets/images/icons/iconFacebook.svg";
-import IconTwitter from "@/assets/images/icons/iconTwitter.svg";
+import IconFaceBook from "@/assets/images/icons/iconFacebook_2.svg";
+import IconTwitter from "@/assets/images/icons/iconTwitter_2.svg";
 import IconWhatsApp from "@/assets/images/icons/iconWhatsWhite_2.svg";
 import IconLinkedin from "@/assets/images/icons/iconLinkedin.svg";
 import IconTelegram from "@/assets/images/icons/iconTelegram.svg";
@@ -61,11 +61,21 @@ export default function Aberto() {
                     27/04/2023 14h44
                   </p>
                   <div className=" flex items-center gap-x-4">
-                    <IconFaceBook className="text-[#006EE9]" />
-                    <IconTwitter className="text-[#0B92E9]" />
-                    <IconWhatsApp className="text-[#32A742]" />
-                    <IconTelegram />
-                    <IconLinkedin />
+                    <button className="duration-300 ease-in hover:scale-125">
+                      <IconFaceBook className="text-[#006EE9]" />
+                    </button>
+                    <button className="duration-300 ease-in hover:scale-125">
+                      <IconTwitter className="text-[#0B92E9]" />
+                    </button>
+                    <button className="duration-300 ease-in hover:scale-125">
+                      <IconWhatsApp className="text-[#32A742]" />
+                    </button>
+                    <button className="duration-300 ease-in hover:scale-125">
+                      <IconTelegram />
+                    </button>
+                    <button className="duration-300 ease-in hover:scale-125">
+                      <IconLinkedin />
+                    </button>
                   </div>
                 </div>
                 <div className="">
@@ -136,11 +146,21 @@ export default function Aberto() {
                   </p>
                 </div>
                 <div className="pt-16 flex items-center justify-end gap-x-4">
-                  <IconFaceBook className="text-[#006EE9]" />
-                  <IconTwitter className="text-[#0B92E9]" />
-                  <IconWhatsApp className="text-[#32A742]" />
-                  <IconTelegram />
-                  <IconLinkedin />
+                  <button className="duration-300 ease-in hover:scale-125">
+                    <IconFaceBook className="text-[#006EE9]" />
+                  </button>
+                  <button className="duration-300 ease-in hover:scale-125">
+                    <IconTwitter className="text-[#0B92E9]" />
+                  </button>
+                  <button className="duration-300 ease-in hover:scale-125">
+                    <IconWhatsApp className="text-[#32A742]" />
+                  </button>
+                  <button className="duration-300 ease-in hover:scale-125">
+                    <IconTelegram />
+                  </button>
+                  <button className="duration-300 ease-in hover:scale-125">
+                    <IconLinkedin />
+                  </button>
                 </div>
               </div>
             </div>
