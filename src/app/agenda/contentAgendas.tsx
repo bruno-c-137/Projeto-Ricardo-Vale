@@ -1,3 +1,5 @@
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+
 export const boxAgenda: any = [
   {
     month: "Julho",
@@ -124,5 +126,40 @@ export const boxAgenda: any = [
           "Descrição da atividade  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição da atividade.",
       },
     ],
+  },
+];
+
+export const pageAberto: any = [
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
+  },
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
+  },
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
+  },
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
+  },
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
+  },
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
+  },
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
+  },
+  {
+    icon: <BsFillArrowRightCircleFill className=" text-[#C61212]" />,
+    textLink: "www.domíniodosite.com.br",
   },
 ];

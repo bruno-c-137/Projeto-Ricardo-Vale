@@ -30,7 +30,7 @@ export default function Sobre() {
                     src={ImgRicardo}
                     width={300}
                     height={200}
-                    className="pointer-events-none min-w-[100px] min-h-[100px]"
+                    className="pointer-events-none min-w-[100px] min-h-[100px] w-auto h-auto"
                     alt="Ricardo Vale"
                   />
                   <div className="absolute bottom-5 sm:bottom-10 left-[25%] sm:left-1/4">
@@ -57,7 +57,7 @@ export default function Sobre() {
                 <IconStarsSmall />
               </div>
             </div>
-            <div className="absolute -bottom-16 sm:bottom-20 -right-7 sm:right-0">
+            <div className="absolute -bottom-16 sm:bottom-20 -right-4 sm:right-0">
               <div>
                 <IconStarsSmall />
               </div>
@@ -82,7 +82,7 @@ export default function Sobre() {
                 </p>
               </div>
               <div className="pt-10">
-                <Image src={ImgQuilombo} className="" alt="Image Quilombo" />
+                <Image src={ImgQuilombo} alt="Image Quilombo" />
               </div>
               <div className="pt-10 sm:px-16 lg:px-20">
                 <h1 className="text-3xl font-medium">Histórico</h1>
