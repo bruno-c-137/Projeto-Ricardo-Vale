@@ -32,13 +32,15 @@ import BoxNoticias from "./sections/boxNoticias";
 import BoxAmigos from "./sections/boxAmigos";
 import FormComunidade from "./sections/formComunidade";
 import Mapa from "./sections/mapa";
+import BannerMain from "./sections/bannerMain";
 
 export default function Home() {
   return (
     <div className="home">
-      <div className="bg-vermelho-1 flex justify-center">
-        <img src={ImgBannerRicardo.src} alt="" />
+      <div>
+        <BannerMain />
       </div>
+
       <div>
         <div className="bg-[#EBEBEB] pb-14 pt-10  min-[1600px]:pt-20">
           <div className="container">
