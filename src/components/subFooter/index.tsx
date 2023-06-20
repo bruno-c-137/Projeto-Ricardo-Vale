@@ -22,7 +22,7 @@ export default function SubFooter() {
                 src={ImgRicardoWhats}
                 width={300}
                 height={200}
-                className="pointer-events-none max-w-[150px] sm:max-w-[200px] md:max-w-full"
+                className="pointer-events-none max-w-[150px] sm:max-w-[200px] md:max-w-full h-auto w-auto"
                 alt="Ricardo Vale"
               />
             </div>
