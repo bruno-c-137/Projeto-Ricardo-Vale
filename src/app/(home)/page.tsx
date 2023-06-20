@@ -36,7 +36,7 @@ import BannerMain from "./sections/bannerMain";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div>
       <div>
         <BannerMain />
       </div>

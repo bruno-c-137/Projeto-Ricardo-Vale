@@ -141,7 +141,7 @@ export default function HeaderMain() {
   };
 
   return (
-    <div className="header-main bg-[#FFFFFF] h-full w-full">
+    <div className="header-main bg-[#FFFFFF] z-50">
       <div className="w-full h-full">{NavMenuMb()}</div>
       <div className="bg-[#FFFFFF] z-50 relative">
         <div className="flex z-50 relative items-center bg-[#FFFFFF] justify-between sm:justify-center py-4 sm:gap-10 md:gap-6 lg:gap-10 container">

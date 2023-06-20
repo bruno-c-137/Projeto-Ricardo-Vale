@@ -24,10 +24,12 @@ interface IProps {
 export default function RootLayout({ children }: IProps) {
   return (
     <html lang="pt-BR">
-      <body>
-        <HeaderMain />
-        <main>{children}</main>
-        <FooterMain />
+      <body className="relative">
+        <div className="gsap-scroll">
+          <HeaderMain />
+          <main>{children}</main>
+          <FooterMain />
+        </div>
       </body>
     </html>
   );
