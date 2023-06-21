@@ -13,12 +13,17 @@ import IconWhatsApp from "@/assets/images/icons/iconWhatsApp.svg";
 import IconHands from "@/assets/images/icons/iconHands.svg";
 import IconAa from "@/assets/images/icons/iconAa.svg";
 import IconArrowHeader from "@/assets/images/icons/iconArrowHeader.svg";
+import Link from "next/link";
+
+import { usePathname } from "next/navigation";
 
 import "./style.scss";
 export default function HeaderMain() {
   const [openBot, setOpenBot] = useState(false);
   const [isActive, setIsActive] = useState(0);
   const [openFaq, setOpenFaq] = useState(0);
+  const router = usePathname();
+  console.log(router);
 
   useEffect(() => {
     if (openBot == false) {
@@ -42,12 +47,6 @@ export default function HeaderMain() {
       setOpenFaq(e);
       setIsActive(0);
     }
-  }
-
-  function renderBorder() {
-    return (
-      <span className="absolute top-full left-1/2 -translate-x-1/2 inline-block w-full h-1 bg-[#C61212]"></span>
-    );
   }
 
   const NavMenuMb = () => {
@@ -149,27 +148,24 @@ export default function HeaderMain() {
           </div>
           <div className="gap-4 hidden md:flex">
             <div className="relative">
-              <button
-                onClick={() => {
-                  setIsActive(1);
-                  setOpenFaq(0);
-                }}
-                className=""
+              <Link
+                href="/"
+                className={`${
+                  router === "/" && "border-b-4 border-vermelho-1"
+                }`}
               >
                 Início
-              </button>
-              {isActive == 1 && renderBorder()}
+              </Link>
             </div>
             <div className="relative">
-              <button
-                onClick={() => {
-                  setIsActive(2);
-                  setOpenFaq(0);
-                }}
+              <Link
+                href="/sobre"
+                className={`${
+                  router === "/sobre" && "border-b-4 border-vermelho-1"
+                }`}
               >
                 Sobre
-              </button>
-              {isActive == 2 && renderBorder()}
+              </Link>
             </div>
             <div className={`relative w-full`}>
               <button
@@ -222,26 +218,24 @@ export default function HeaderMain() {
               </div>
             </div>
             <div className="relative">
-              <button
-                onClick={() => {
-                  setIsActive(3);
-                  setOpenFaq(0);
-                }}
+              <Link
+                href="/comunidade"
+                className={`${
+                  router === "/comunidade" && "border-b-4 border-vermelho-1"
+                }`}
               >
                 Comunidade
-              </button>
-              {isActive == 3 && renderBorder()}
+              </Link>
             </div>
             <div className="relative">
-              <button
-                onClick={() => {
-                  setIsActive(4);
-                  setOpenFaq(0);
-                }}
+              <Link
+                href="/contato"
+                className={`${
+                  router === "/contato" && "border-b-4 border-vermelho-1"
+                }`}
               >
                 Contato
-              </button>
-              {isActive == 4 && renderBorder()}
+              </Link>
             </div>
           </div>
           <div className="hidden sm:flex items-center sm:gap-4 md:gap-2 lg:gap-4">

@@ -19,28 +19,30 @@ export default function BannerMain() {
         pin: ".gsap-scroll",
         markers: false,
         scrub: 1,
-        end: "+=500",
+        //  end: "+=500",
       },
       opacity: 0,
     });
   }, []);
   return (
     <div className="banner-main bg-vermelho-1">
-      <div className="container relative">
-        <img
-          className="max-h-full w-full absolute top-0 left-1/2 -translate-x-1/2"
-          src={ImgBannerRicardo.src}
-          alt=""
-        />
+      <div className="container ">
+        <div className="relative w-full">
+          <img
+            className="max-h-full w-full absolute top-0 left-1/2 -translate-x-1/2"
+            src={ImgBannerRicardo.src}
+            alt=""
+          />
 
-        <img
-          src={RicardoVale.src}
-          className="absolute right-0 bottom-0 w-full"
-          alt=""
-        />
+          <img
+            src={RicardoVale.src}
+            className="absolute right-0 bottom-0 w-full"
+            alt=""
+          />
 
-        <div ref={triggerRef} className="relative bg-vermelho-1">
-          <img src={ImgBnnerValeLutar.src} className="mx-auto" alt="" />
+          <div ref={triggerRef} className="relative bg-vermelho-1">
+            <img src={ImgBnnerValeLutar.src} className="mx-auto" alt="" />
+          </div>
         </div>
       </div>
     </div>

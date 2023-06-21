@@ -1,6 +1,6 @@
 "use client";
 // import { ReactComponent as IconFaq } from '../../assets/images/icon-faq.svg';
-import LogoFooter from "../../assets/images/logoFooter.svg";
+import RicardoVale from "@/assets/images/ricardo-vale.gif";
 import IconPT from "../../assets/images/icons/iconPT.svg";
 import IconFaceBook from "../../assets/images/icons/iconFacebook.svg";
 import IconInstagram from "../../assets/images/icons/iconInstagram.svg";
@@ -24,10 +24,8 @@ export default function FooterMain() {
     <footer className="bg-[#3A3A3A]">
       <div className="container sm:flex sm:flex-col relative sm:px-4 lg:px-12 pt-6 pb-5">
         <div className="sm:flex-1 sm:flex sm:gap-10 lg:gap-6">
-          <div className=" sm:w-4/12 lg:w-5/12">
-            <div>
-              <LogoFooter />
-            </div>
+          <div className=" sm:w-4/12 lg:w-3/12">
+            <img src={RicardoVale.src} className="w-full" alt="" />
           </div>
           <div className="sm:w-8/12 lg:w-7/12 sm:text-sm lg:text-base sm:flex gap-6 text-[#FFFFFF] pt-1">
             <p>

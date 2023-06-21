@@ -25,7 +25,7 @@ export default function RootLayout({ children }: IProps) {
   return (
     <html lang="pt-BR">
       <body className="relative">
-        <div className="gsap-scroll">
+        <div className="gsap-scroll  ">
           <HeaderMain />
           <main>{children}</main>
           <FooterMain />
