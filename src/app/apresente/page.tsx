@@ -2,7 +2,7 @@ import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.sv
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
 import Image from "next/image";
-import ImgRicardo from "@/assets/images/img-ricardo-noticias.webp";
+import ImgRicardo from "@/assets/images/ricardopgapresente.webp";
 import Input from "@/components/input/Input";
 import SetaSelect from "@/assets/images/seta-select.svg";
 import SubFooter from "@/components/subFooter";
@@ -24,9 +24,7 @@ export default function Apresente() {
               <div className="relative sm:pr-20">
                 <Image
                   src={ImgRicardo}
-                  width={300}
-                  height={250}
-                  className="pointer-events-none min-w-[100px] min-h-[100px]"
+                  className="pointer-events-none "
                   alt="Ricardo Vale"
                 />
                 <div className="absolute top-[35%] right-[16%] sm:right-[30%]">

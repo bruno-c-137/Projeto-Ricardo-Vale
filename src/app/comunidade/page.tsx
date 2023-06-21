@@ -2,7 +2,7 @@ import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.sv
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
 import Image from "next/image";
-import ImgRicardo from "@/assets/images/img-ricardo-noticias.webp";
+import ImgRicardo from "@/assets/images/ricardopgnoticiasaberta.webp";
 import Input from "@/components/input/Input";
 import SetaSelect from "@/assets/images/seta-select.svg";
 import SubFooter from "@/components/subFooter";
@@ -12,7 +12,7 @@ export default function Comunidade() {
       <div className="bg-[#C61212] mb-20 md:mb-32">
         <div className="container lg:px-12">
           <div className="flex items-center justify-end relative">
-            <div className="text-white absolute left-0 w-1/2 md:w-auto">
+            <div className="text-white absolute left-0 w-1/2 md:w-auto z-40">
               <p className="text-sm sm:text-[1.375rem] -mb-2 sm:-mb-3 tracking-[0.3em] font-medium">
                 PARTICIPE
               </p>
@@ -24,15 +24,13 @@ export default function Comunidade() {
               <div className="relative sm:pr-20">
                 <Image
                   src={ImgRicardo}
-                  width={300}
-                  height={250}
-                  className="pointer-events-none min-w-[100px] min-h-[100px]"
+                  className="pointer-events-none"
                   alt="Ricardo Vale"
                 />
                 <div className="absolute top-[35%] right-[16%] sm:right-[30%]">
                   <IconStarsWhiteSmall />
                 </div>
-                <div className="absolute bottom-[7%] -left-[12%] sm:-left-10">
+                <div className="absolute bottom-[7%]  sm:-left-10">
                   <IconStarsWhiteMedium />
                 </div>
               </div>

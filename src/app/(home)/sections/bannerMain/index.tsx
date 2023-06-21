@@ -1,6 +1,7 @@
 "use client";
 import ImgBannerRicardo from "@/assets/images/img-banner_Ricardo.webp";
 import ImgBnnerValeLutar from "@/assets/images/img-banner-vale-lutar.webp";
+import RicardoVale from "@/assets/images/ricardo-vale.gif";
 import "./style.scss";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -13,9 +14,9 @@ export default function BannerMain() {
 
     gsap.to(triggerRef.current, {
       scrollTrigger: {
-        trigger: '.gsap-scroll',
+        trigger: ".gsap-scroll",
         start: "top top",
-        pin: '.gsap-scroll',
+        pin: ".gsap-scroll",
         markers: false,
         scrub: 1,
         end: "+=500",
@@ -26,19 +27,20 @@ export default function BannerMain() {
   return (
     <div className="banner-main bg-vermelho-1">
       <div className="container relative">
-        <div>
-          <img
-            className="max-h-full w-full absolute top-0 left-1/2 -translate-x-1/2"
-            src={ImgBannerRicardo.src}
-            alt=""
-          />
-        </div>
+        <img
+          className="max-h-full w-full absolute top-0 left-1/2 -translate-x-1/2"
+          src={ImgBannerRicardo.src}
+          alt=""
+        />
+
+        <img
+          src={RicardoVale.src}
+          className="absolute right-0 bottom-0 w-full"
+          alt=""
+        />
+
         <div ref={triggerRef} className="relative bg-vermelho-1">
-          <img
-            src={ImgBnnerValeLutar.src}
-            className="mx-auto"
-            alt=""
-          />
+          <img src={ImgBnnerValeLutar.src} className="mx-auto" alt="" />
         </div>
       </div>
     </div>

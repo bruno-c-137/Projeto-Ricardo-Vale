@@ -1,11 +1,10 @@
 import Image from "next/image";
-import ImgRicardo from "@/assets/images/img-ricardo-header-2.webp";
+import ImgRicardo from "@/assets/images/ricardoPGBandeiras.webp";
 import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.svg";
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
 import SetaRBandeira from "@/assets/images/seta-r-bandeira.svg";
 import StarBandeiras1 from "@/assets/images/star-bandeiras-1.svg";
-import StarBandeiras2 from "@/assets/images/star-bandeiras-2.svg";
 import { boxBandeiras } from "./contentBandeiras";
 import SubFooter from "@/components/subFooter";
 export default function Bandeiras() {
@@ -26,9 +25,7 @@ export default function Bandeiras() {
               <div className="relative sm:pr-20">
                 <Image
                   src={ImgRicardo}
-                  width={300}
-                  height={250}
-                  className="pointer-events-none min-w-[100px] min-h-[100px]"
+                  className="pointer-events-none "
                   alt="Ricardo Vale"
                 />
                 <div className="absolute top-[35%] right-[16%] sm:right-[30%]">
@@ -49,9 +46,6 @@ export default function Bandeiras() {
         <div className="container relative">
           <div className="hidden sm:block absolute lg:-left-20  sm:top-24 md:top-10 pointer-events-none">
             <StarBandeiras1 />
-          </div>
-          <div className=" absolute right-0 -bottom-14 sm:-bottom-32 md:-bottom-40 pointer-events-none">
-            <StarBandeiras2 />
           </div>
           <div className="md:px-20 mb-10 md:mb-16 z-10 relative">
             <p className="font-semibold text-[#404040] text-base">

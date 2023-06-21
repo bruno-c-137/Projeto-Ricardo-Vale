@@ -28,9 +28,7 @@ export default function Sobre() {
                 <div className="relative sm:pr-20">
                   <Image
                     src={ImgRicardo}
-                    width={300}
-                    height={200}
-                    className="pointer-events-none min-w-[100px] min-h-[100px] w-auto h-auto"
+                    className="pointer-events-none"
                     alt="Ricardo Vale"
                   />
                   <div className="absolute bottom-5 sm:bottom-10 left-[25%] sm:left-1/4">

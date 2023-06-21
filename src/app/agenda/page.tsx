@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImgRicardo from "@/assets/images/ricardoPGSobre.webp";
+import ImgRicardo from "@/assets/images/ricardoPGAgenda.webp";
 import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.svg";
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
 import IconStarsWhiteBig from "@/assets/images/icons/iconStarWhiteBig.svg";
@@ -26,9 +26,7 @@ export default function Agenda() {
                 <div className="relative sm:pr-20">
                   <Image
                     src={ImgRicardo}
-                    width={350}
-                    height={300}
-                    className="pointer-events-none min-w-[100px] min-h-[100px]"
+                    className="pointer-events-none"
                     alt="Ricardo Vale"
                   />
                   <div className="absolute top-[35%] right-[16%] sm:right-[30%]">
@@ -99,11 +97,11 @@ export default function Agenda() {
             </div>
           </div>
         </div>
-        <div className="relative h-full w-full">
+        {/* <div className="relative h-full w-full">
           <div className="hidden sm:block absolute -bottom-8 sm:right-[10%]">
             <IconStarsSmall />
           </div>
-        </div>
+        </div> */}
       </div>
       <SubFooter />
     </>

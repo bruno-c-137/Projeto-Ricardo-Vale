@@ -22,7 +22,8 @@ import IconFem from "@/assets/images/icons/icon-fem.webp";
 import IconBola from "@/assets/images/icons/icon-bola.webp";
 import IconTeatro from "@/assets/images/icons/icon-teatro.webp";
 import IconCidade from "@/assets/images/icons/icon-cidade.webp";
-import ImgWhatsapp from "@/assets/images/img-whatsapp.webp";
+import ImgWhatsapp from "@/assets/images/whats-gif.gif";
+import ImgZapMeChame from "@/assets/images/img-zap-me-chame.webp";
 import ImgAGenteSeVe from "@/assets/images/img-a-gente-se-ve.webp";
 import FlickrLogo from "@/assets/images/flickr_logo.webp";
 import StarComunidadeR from "@/assets/images/star-comunidade-r.webp";
@@ -319,7 +320,14 @@ export default function Home() {
           <div className="container">
             <div className="flex flex-col sm:flex-row sm:items-center">
               <div className="sm:w-1/2 order-1 sm:order-none">
-                <img src={ImgWhatsapp.src} alt="" />
+                <div className="flex items-center">
+                  <div>
+                    <img src={ImgZapMeChame.src} alt="" />
+                  </div>
+                  <div>
+                    <img src={ImgWhatsapp.src} alt="" />
+                  </div>
+                </div>
               </div>
               <div className="sm:w-1/2 sm:px-10 lg:px-16">
                 <p className="text-[#2F2F2F] text-4xl md:text-6xl lg:text-7xl mb-5">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SubFooter from "@/components/subFooter";
-import ImgRicardo from "@/assets/images/img-ricardo-projetos.webp";
+import ImgRicardo from "@/assets/images/ricardoPGProjetos.webp";
 import IconStarsSmall from "@/assets/images/icons/iconStarsSmall.svg";
 import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.svg";
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
@@ -26,9 +26,7 @@ export default function Projetos() {
                 <div className="relative sm:pr-20">
                   <Image
                     src={ImgRicardo}
-                    width={350}
-                    height={300}
-                    className="pointer-events-none min-w-[100px] min-h-[100px]"
+                    className="pointer-events-none"
                     alt="Ricardo Vale"
                   />
                   <div className="absolute top-[30%] right-[16%] sm:right-[40%]">
@@ -64,9 +62,6 @@ export default function Projetos() {
           </div>
           <div className="pt-16 sm:pt-12 lg:px-14">
             <BoxProjetos />
-          </div>
-          <div className="hidden sm:block absolute sm:-bottom-[5%] md:-bottom-[2%] right-[10%]">
-            <IconStarsSmall />
           </div>
         </div>
       </div>

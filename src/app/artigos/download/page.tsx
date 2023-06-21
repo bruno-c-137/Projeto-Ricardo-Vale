@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SubFooter from "@/components/subFooter";
-import ImgRicardo from "@/assets/images/img-ricardo-header-2.webp";
+import ImgRicardo from "@/assets/images/ricardoPGBandeiras.webp";
 import IconStarsSmall from "@/assets/images/icons/iconStarsSmall.svg";
 import IconStarsWhiteSmall from "@/assets/images/icons/iconStarWhiteSmall.svg.svg";
 import IconStarsWhiteMedium from "@/assets/images/icons/iconStarWhiteMedium.svg";
@@ -26,9 +26,7 @@ export default function Download() {
                 <div className="relative sm:pr-20">
                   <Image
                     src={ImgRicardo}
-                    width={300}
-                    height={250}
-                    className="pointer-events-none min-w-[100px] min-h-[100px]"
+                    className="pointer-events-none "
                     alt="Ricardo Vale"
                   />
                   <div className="absolute top-[35%] right-[16%] sm:right-[30%]">
@@ -88,9 +86,6 @@ export default function Download() {
                 <IconDownload className="text-[#C61212]" />
               </button>
             </div>
-          </div>
-          <div className="hidden sm:block absolute -bottom-[7%] sm:right-4 md:right-16">
-            <IconStarsSmall />
           </div>
         </div>
       </div>
