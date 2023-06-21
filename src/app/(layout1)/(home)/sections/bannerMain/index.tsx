@@ -19,7 +19,7 @@ export default function BannerMain() {
         pin: ".gsap-scroll",
         markers: false,
         scrub: 1,
-        //  end: "+=500",
+        end: "+=500",
       },
       opacity: 0,
     });

@@ -1,11 +1,10 @@
 body {
   padding-right: 0 !important;
   @apply overflow-x-hidden;
-  .gsap-scroll {
-    @apply min-h-screen flex flex-col;
-    main {
-      @apply flex-1;
-    }
+
+  @apply min-h-screen flex flex-col;
+  & > main {
+    @apply flex-1;
   }
 }
 

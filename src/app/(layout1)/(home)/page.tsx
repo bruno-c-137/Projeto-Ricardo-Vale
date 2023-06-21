@@ -32,10 +32,18 @@ import BoxConquista from "./sections/boxConquista";
 import BoxNoticias from "./sections/boxNoticias";
 import BoxAmigos from "./sections/boxAmigos";
 import FormComunidade from "./sections/formComunidade";
-import Mapa from "./sections/mapa";
+// import Mapa from "./sections/mapa";
 import BannerMain from "./sections/bannerMain";
+import dynamic from "next/dynamic";
 
 export default function Home() {
+  
+const MapaDinamic = dynamic(
+  () => {
+    return import("./sections/mapa");
+  },
+  { ssr: false }
+);
   return (
     <div>
       <div>
@@ -436,7 +444,7 @@ export default function Home() {
               <strong>Nosso Escritório</strong>
             </p>
           </div>
-          <Mapa />
+          <MapaDinamic />
         </div>
       </div>
     </div>

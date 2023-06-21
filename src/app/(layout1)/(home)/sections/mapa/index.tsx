@@ -1,7 +1,6 @@
 "use client";
 import Leaflet from "leaflet";
 import * as ReactLeaflet from "react-leaflet";
-import IconLeaflet from "@/assets/images/icons/icon-bola.webp";
 import "leaflet/dist/leaflet.css";
 import "./style.scss";
 export default function Mapa() {
@@ -31,8 +30,8 @@ export default function Mapa() {
               <Popup>
                 <p className="title-popup">Câmara dos Deputados</p>
                 <p className="text-popup">
-                  Palácio do Congresso Nacional - Praça dos Três Poderes Brasília
-                  - DF - Brasil - CEP 70160-900
+                  Palácio do Congresso Nacional - Praça dos Três Poderes
+                  Brasília - DF - Brasil - CEP 70160-900
                 </p>
                 {/* <p className="text-popup">curtidas: <strong>{items.likes}</strong></p> */}
               </Popup>
