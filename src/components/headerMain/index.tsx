@@ -44,7 +44,6 @@ export default function HeaderMain() {
     }
   }
 
-
   function renderBorder() {
     return (
       <span className="absolute top-full left-1/2 -translate-x-1/2 inline-block w-full h-1 bg-[#C61212]"></span>
@@ -142,7 +141,7 @@ export default function HeaderMain() {
 
   return (
     <div className="header-main bg-[#FFFFFF] z-50">
-      <div className="w-full h-full">{NavMenuMb()}</div>
+      {NavMenuMb()}
       <div className="bg-[#FFFFFF] z-50 relative">
         <div className="flex z-50 relative items-center bg-[#FFFFFF] justify-between sm:justify-center py-4 sm:gap-10 md:gap-6 lg:gap-10 container">
           <div>
@@ -150,13 +149,26 @@ export default function HeaderMain() {
           </div>
           <div className="gap-4 hidden md:flex">
             <div className="relative">
-              <button onClick={() => {setIsActive(1); setOpenFaq(0)}} className="">
+              <button
+                onClick={() => {
+                  setIsActive(1);
+                  setOpenFaq(0);
+                }}
+                className=""
+              >
                 Início
               </button>
               {isActive == 1 && renderBorder()}
             </div>
             <div className="relative">
-              <button onClick={() => {setIsActive(2); setOpenFaq(0)}}>Sobre</button>
+              <button
+                onClick={() => {
+                  setIsActive(2);
+                  setOpenFaq(0);
+                }}
+              >
+                Sobre
+              </button>
               {isActive == 2 && renderBorder()}
             </div>
             <div className={`relative w-full`}>
@@ -210,11 +222,25 @@ export default function HeaderMain() {
               </div>
             </div>
             <div className="relative">
-              <button onClick={() => {setIsActive(3); setOpenFaq(0)}}>Comunidade</button>
+              <button
+                onClick={() => {
+                  setIsActive(3);
+                  setOpenFaq(0);
+                }}
+              >
+                Comunidade
+              </button>
               {isActive == 3 && renderBorder()}
             </div>
             <div className="relative">
-              <button onClick={() => {setIsActive(4); setOpenFaq(0)}}>Contato</button>
+              <button
+                onClick={() => {
+                  setIsActive(4);
+                  setOpenFaq(0);
+                }}
+              >
+                Contato
+              </button>
               {isActive == 4 && renderBorder()}
             </div>
           </div>

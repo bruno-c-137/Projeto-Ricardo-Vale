@@ -11,7 +11,7 @@ export default function Interno() {
       <div className="bg-[#C61212] mb-10 md:mb-20">
         <div className="container lg:px-12">
           <div className="flex items-center justify-end relative">
-            <div className="text-white absolute left-0">
+            <div className="text-white absolute left-0 w-1/2 md:w-auto">
               <p className="text-sm sm:text-[1.375rem] -mb-2 sm:-mb-3 tracking-[0.3em] font-medium">
                 BANDEIRA
               </p>

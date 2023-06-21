@@ -58,7 +58,7 @@ export default function FormComunidade() {
             </div>
             <select
               required
-              className=" w-full appearance-none border border-[#9B9B9B] rounded-full text-sm text-[#676767] bg-white outline-none py-2 px-4"
+              className=" w-full appearance-none border border-[#9B9B9B] rounded-full text-sm text-[#676767] bg-white outline-none py-3 px-4"
             >
               <option disabled value="">
                 Bandeira

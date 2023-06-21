@@ -16,7 +16,7 @@ export default function Input({ label, input, type, noborder }: InputProps) {
         {...input}
         className={` ${
           !!noborder ? "" : "border border-[#9B9B9B]"
-        } w-full rounded-full text-sm text-[#676767] bg-white outline-none py-2 px-4 ${
+        } w-full rounded-full text-sm text-[#676767] bg-white outline-none py-3 px-4 ${
           input?.className || ""
         }`}
       />
